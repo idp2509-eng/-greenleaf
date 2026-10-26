@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Контакти — Green Leaf</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+  <h2>Контакти та бронювання</h2>
+  <div class="two">
+    <section>
+      <div class="box"><b>Адреса</b><br>м. Біла Церква, вул. Шевченка, 12</div>
+      <div class="box"><b>Телефон</b><br>+380 (97) 123-45-67</div>
+      <div class="box"><b>Email</b><br>greenleaf@gmail.com</div>
+      <div class="box"><b>Графік роботи</b><br>Щодня, 10:00 – 23:00</div>
+    </section>
+    <section>
+      <h3>Забронювати столик</h3>
+      <form class="f" id="bookForm" novalidate>
+        <label>Ім'я<input name="name"></label>
+        <label>Телефон<input name="phone" placeholder="+380..."></label>
+        <label>Дата<input name="date" type="date"></label>
+        <label>Час<input name="time" type="time" min="10:00" max="22:00"></label>
+        <label>Кількість гостей<select name="guests"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label>
+        <div class="err" id="bookErr"></div>
+        <button class="btn">Забронювати</button>
+      </form>
+      <h3>Ваші бронювання</h3>
+      <div id="bookings"></div>
+    </section>
+  </div>
+</main>
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
